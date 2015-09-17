@@ -1,10 +1,10 @@
 class SearchController < ApplicationController
 
   def index
-    @q = params['record'] && params['record']['q']
+    @q = params['ballast'] && params['ballast']['q']
     return if @q.blank?
 
-    @hits = Record.search(@q, { hitsPerPage: 5, page: (params['page'] || 1) })
+    @hits = Ballast.search(@q, { hitsPerPage: 5, page: (params['page'] || 1) })
   end
 
 end
