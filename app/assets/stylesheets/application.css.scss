@@ -47,12 +47,23 @@ input {
 }
 
 .instant-search-form {
-  width: 500px !important; height: 70px !important; padding: 0px !important; margin: 0px !important; background: white; font-size: 24px !important;
-  padding-left: 5px !important; border: 2px solid #18bc9c !important;
+  width: 500px !important;
+  height: 70px !important;
+  padding: 0px !important;
+  margin: 0px !important;
+  background: white;
+  font-size: 24px !important;
+
+  padding-left: 5px !important;
+  border: 2px solid #18bc9c !important;
 }
 
 #hits {
-  margin-top: 30px;
+  // margin-top: 30px;
+}
+
+.attribute_table {
+  margin-bottom: 0px;
 }
 
 .search-terms {
@@ -63,15 +74,95 @@ input {
 .hit-instant-search {
   border: 1px solid #EFEFEF;
   margin-bottom: 10px;
-  padding: 10px 20px;
+  padding: 10px 20px 0px;
+
+  // column-count: 5
+
 
   em {
     font-weight: bold;
     font-style: normal;
   }
 
-  .name {
-    font-size: 20px;
+  .SKU {
+    font-size: 15px;
+    font-weight: bold;
+    font-style: bold;
+    display: inline-block;
+    width: 104px;
+    padding: 25px;
+  }
+
+  .Current_Item {
+    display: inline-block;
+    color: blue;
+    width: 124px;
+    padding: 10px
+    // border: 3px solid #EFEFEF;
+
+  }
+
+  .Current_Item_sku_packaging_qty {
+    display: inline-block;
+    width: 104px;
+    color: brown;
+    padding: 10px;
+  }
+
+  .Current_Item_Overall_Status {
+    display: inline-block;
+    width: 104px;
+    color: purple;
+    padding: 10px;
+  }
+
+  .Current_Item_Specific_Status {
+    display: inline-block;
+    width: 100px;
+    color: purple;
+    padding: 10px;
+  }
+
+  .Current_Item_Product_Type {
+    display: inline-block;
+    width: 100px;
+    color: green;
+    padding: 10px;
+  }
+
+  .Break {
+    // display: inline-block;
+    width: 10px;
+    color: green;
+    padding: 10px;
+  }
+
+  .Current_Item_Version_Number {
+    display: inline-block;
+    width: 120px;
+    color: green;
+    padding: 10px;
+  }
+
+  .Successor_Item_Substitute_Item {
+    display: inline-block;
+    width: 100px;
+    color: brown;
+    padding: 10px;
+  }
+
+  .Successor_Item_sku_Family {
+    display: inline-block;
+    width: 110px;
+    color: brown;
+    padding: 10px;
+  }
+
+  .Substitutue_item_sku_Family {
+    display: inline-block;
+    width: 100px;
+    color: brown;
+    // padding: 10px;
   }
 
   .created_at {
@@ -80,10 +171,10 @@ input {
     font-size: 0.6em;
   }
 
-  .company {
-    float: right;
-    color: #999;
-  }
+  // .company {
+  //   float: right;
+  //   color: #999;
+  // }
 }
 
 .twitter-typeahead, .tt-input, .tt-hint { width: 500px !important; height: 50px !important; padding: 0px !important; margin: 0px !important; background: white; font-size: 24px !important; }
