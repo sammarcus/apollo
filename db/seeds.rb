@@ -12,7 +12,7 @@ Ballast.delete_all
 # Ballast.clear_index!
 
 Ballast.without_auto_index do
-  JSON.load(File.new("#{Rails.root}/db/ballast.json")).each do |c|
+  JSON.load(File.new("#{Rails.root}/db/fresh_data.json")).each do |c|
     Ballast.create c
   end
 end
